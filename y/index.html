@@ -1,89 +1,218 @@
-<!DOCTYPE html>
-<html>
-  <head>
+<!doctype html>
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <title></title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.8.3/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.8.3/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.8.3/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.8.3/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.8.3/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.8.3/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.8.3/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.8.3/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.8.3/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.8.3/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<body>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
+                lists, etc.
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <div class="fullPage frontPage">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="ms-4 link-light text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                    role="button" aria-controls="offcanvasExample">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#fff" class="bi bi-list"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </a>
+            </div>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+            <a href="#" class=" mt-2 btn btn-primary mainBtn me-5">Participate</a>
+        </nav>
+
+
+
+        <div class="introText">
+            <div class="bigName text-white text-center fs-1">
+                <h1 class="mb-0">TECH-A-MONTH</h1>
+                <h1>3.0</h1>
+            </div>
+            <div class="mt-3 fs-5 text-white text-center">
+                September, 2022
+            </div>
+        </div>
+    </div>
+
+    <div class="fullPage">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="ms-4 link-light text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                    role="button" aria-controls="offcanvasExample">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#000" class="bi bi-list"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </a>
+            </div>
+
+            <a href="#" class=" mt-2 btn btn-primary mainBtn me-5">Participate</a>
+        </nav>
+
+
+        <div class="col-md-10 row ms-auto me-auto aboutSec">
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-8">
+                <h1>We are back again this year!</h1>
+                <p class="mt-5 fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat consequuntur
+                    alias dolorum deserunt ducimus rerum quis dignissimos laboriosam quam quod saepe architecto, quidem
+                    in, nisi mollitia odit facere error cupiditate.</p>
+                <div class="mt-5 d-inline">
+                    <div class="Stats text-lg-start d-lg-inline-block me-5">
+                        <h1 class="bigNum">
+                            60+
+                        </h1>
+                        <h1 class="fs-3">Events</h1>
+                    </div>
+
+                    <div class="Stats text-lg-start d-lg-inline-block me-5">
+                        <h1 class="bigNum">
+                            360+
+                        </h1>
+                        <h1 class="fs-3">Participants</h1>
+                    </div>
+
+                    <div class="Stats text-lg-start d-lg-inline-block me-5">
+                        <h1 class="bigNum">
+                            100+
+                        </h1>
+                        <h1 class="fs-3">Speakers</h1>
+                    </div>
+                </div>
+                <p class="mt-5 fs-5">View the <a href="#">TECH-A-MONTH Prospectus</a></p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="fullPage">
+        <div class="Heading">
+            <h1>Our upcoming events</h1>
+        </div>
+
+        <div class="col-md-7 ms-auto me-auto">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item accordion-Border">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button fs-4" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Google I/O Extended
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body row">
+                            <div class="col-md-6">
+                                <h5 class="mb-3">Date: <span class="fw-normal">July 18, 2022</span> </h5>
+                                <h5 class="mb-3">Time: <span class="fw-normal">10:00 AM IST</span> </h5>
+                                <h5 class="mb-3">Speaker: <span class="fw-normal">Dr. John Doe</span> </h5>
+                                <h5 class="mb-3">Domain: <span class="fw-normal">Computer Science</span> </h5>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>Description:</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum maxime laboriosam eius esse id dignissimos saepe ab, vitae veritatis. Tempora explicabo nisi quidem quaerat voluptate, harum eius vitae suscipit rerum!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item accordion-Border">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button fs-4 collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Computer Society Launch
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body row">
+                            <div class="col-md-6">
+                                <h5 class="mb-3">Date: <span class="fw-normal">July 18, 2022</span> </h5>
+                                <h5 class="mb-3">Time: <span class="fw-normal">10:00 AM IST</span> </h5>
+                                <h5 class="mb-3">Speaker: <span class="fw-normal">Dr. John Doe</span> </h5>
+                                <h5 class="mb-3">Domain: <span class="fw-normal">Computer Science</span> </h5>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>Description:</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum maxime laboriosam eius esse id dignissimos saepe ab, vitae veritatis. Tempora explicabo nisi quidem quaerat voluptate, harum eius vitae suscipit rerum!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item accordion-Border">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button fs-4 collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            E-Chakravyuh
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body row">
+                            <div class="col-md-6">
+                                <h5 class="mb-3">Date: <span class="fw-normal">July 18, 2022</span> </h5>
+                                <h5 class="mb-3">Time: <span class="fw-normal">10:00 AM IST</span> </h5>
+                                <h5 class="mb-3">Speaker: <span class="fw-normal">Dr. John Doe</span> </h5>
+                                <h5 class="mb-3">Domain: <span class="fw-normal">Computer Science</span> </h5>
+                            </div>
+                            <div class="col-md-6">
+                                <h5>Description:</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum maxime laboriosam eius esse id dignissimos saepe ab, vitae veritatis. Tempora explicabo nisi quidem quaerat voluptate, harum eius vitae suscipit rerum!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Heading">
+            <a class="fs-4" href="#">View all</a>
+        </div>
+
+    </div>
+
+    <div class="fullPage">
+        <div class="Heading">
+            <h1>Our partners</h1>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
