@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #fff;
     background: radial-gradient(ellipse at bottom, #1C2837 0%, #050608 100%);
     scroll-behavior: smooth;
