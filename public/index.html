@@ -1,202 +1,412 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title> Home</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--   CSS Files -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/swiper@7/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!--  Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
 
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <div>
-                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-            </div>
-            <div class="dropdown mt-3">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-                    Dropdown button
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+        <div class="container d-flex align-items-center justify-content-between">
+            <!--            <h1 class="logo"><a href="index.html">Tech-A-Month</a></h1>-->
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <a href="index.html" class="logo"><img src="assets/img/favi.png" alt="" class="img-fluid"></a>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#about">About</a></li>
+                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                    <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+                    <li><a class="nav-link scrollto" href="#team">Team</a></li>
+                    <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#">Drop Down 1</a></li>
+                            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                                <ul>
+                                    <li><a href="#">Deep Drop Down 1</a></li>
+                                    <li><a href="#">Deep Drop Down 2</a></li>
+                                    <li><a href="#">Deep Drop Down 3</a></li>
+                                    <li><a href="#">Deep Drop Down 4</a></li>
+                                    <li><a href="#">Deep Drop Down 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Drop Down 2</a></li>
+                            <li><a href="#">Drop Down 3</a></li>
+                            <li><a href="#">Drop Down 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                    <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
                 </ul>
-            </div>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+
         </div>
-    </div>
+    </header>
+    <!-- End Header -->
 
-    <div class="fullPage frontPage">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="ms-4 link-light text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#fff" class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                    </svg>
-                </a>
-            </div>
-
-            <a href="#" class=" mt-2 btn btn-primary mainBtn me-5">Participate</a>
-        </nav>
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center">
 
 
-
-        <div class="introText">
-            <div class="bigName text-white text-center fs-1">
-                <h1 class="mb-0">TECH-A-MONTH</h1>
-                <h1>3.0</h1>
-            </div>
-            <div class="mt-3 fs-5 text-white text-center">
-                September, 2022
-            </div>
-        </div>
-    </div>
-
-    <div class="fullPage">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="ms-4 link-light text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#000" class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                    </svg>
-                </a>
-            </div>
-
-            <a href="#" class=" mt-2 btn btn-primary mainBtn me-5">Participate</a>
-        </nav>
+        <div class="container-fluid" data-aos="fade-up">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                    <h1>Tech-A-Month <span style="color: #a035db;">3.0</span></h1>
+                    <!--                    <h2>2022</h2>-->
+                    <!--                    <img src="assets/img/favi.png" class="img-fluid animated" alt="">-->
 
 
-        <div class="col-md-10 row ms-auto me-auto aboutSec">
-            <div class="col-md-4">
-
-            </div>
-            <div class="col-md-8">
-                <h1>We are back again this year!</h1>
-                <p class="mt-5 fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat consequuntur alias dolorum deserunt ducimus rerum quis dignissimos laboriosam quam quod saepe architecto, quidem in, nisi mollitia odit facere error cupiditate.</p>
-                <div class="mt-5 d-inline">
-                    <div class="Stats text-lg-start d-lg-inline-block me-5">
-                        <h1 class="bigNum">
-                            60+
-                        </h1>
-                        <h1 class="fs-3">Events</h1>
-                    </div>
-
-                    <div class="Stats text-lg-start d-lg-inline-block me-5">
-                        <h1 class="bigNum">
-                            360+
-                        </h1>
-                        <h1 class="fs-3">Participants</h1>
-                    </div>
-
-                    <div class="Stats text-lg-start d-lg-inline-block me-5">
-                        <h1 class="bigNum">
-                            100+
-                        </h1>
-                        <h1 class="fs-3">Speakers</h1>
-                    </div>
+                    <div><a href="#about" class="btn-get-started scrollto">Get Started</a></div>
                 </div>
-                <p class="mt-5 fs-5">View the <a href="#">TECH-A-MONTH Prospectus</a></p>
+                <div class="col-xl-5 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
+                    <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+
+                </div>
             </div>
 
-        </div>
-    </div>
 
-    <div class="fullPage">
-        <div class="Heading">
-            <h1>Our upcoming events</h1>
+
+
         </div>
 
-        <div class="col-md-7 ms-auto me-auto">
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item accordion-Border">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Google I/O Extended
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div class="accordion-body row">
-                            <div class="col-md-6">
-                                <h5 class="mb-3">Date: <span class="fw-normal">July 18, 2022</span> </h5>
-                                <h5 class="mb-3">Time: <span class="fw-normal">10:00 AM IST</span> </h5>
-                                <h5 class="mb-3">Speaker: <span class="fw-normal">Dr. John Doe</span> </h5>
-                                <h5 class="mb-3">Domain: <span class="fw-normal">Computer Science</span> </h5>
-                            </div>
-                            <div class="col-md-6">
-                                <h5>Description:</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum maxime laboriosam eius esse id dignissimos saepe ab, vitae veritatis. Tempora explicabo nisi quidem quaerat voluptate, harum eius vitae suscipit rerum!</p>
+    </section>
+    
+  
+    
+    <!-- End Hero -->
+
+    <main id="main">
+
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-6 order-1 order-lg-2 content" data-aos="zoom-in" data-aos-delay="150">
+                        <h3>We are back again this year!
+                        </h3>
+                        <h5>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat consequuntur alias dolorum deserunt ducimus rerum quis dignissimos laboriosam quam quod saepe architecto, quidem in, nisi mollitia odit facere error cupiditate.
+
+                        </h5>
+                        <div id="counts" class="counts">
+                            <div class="container">
+
+                                <div class="row counters">
+
+                                    <div class="col-lg-4 col-12 text-center">
+                                        <span data-purecounter-start="0" data-purecounter-end="60" data-purecounter-duration="1" class="purecounter"></span>
+                                        <p>Events</p>
+                                    </div>
+
+                                    <div class="col-lg-4 col-12 text-center">
+                                        <span data-purecounter-start="0" data-purecounter-end="360" data-purecounter-duration="1" class="purecounter"></span>
+                                        <p>Participants</p>
+                                    </div>
+
+                                    <div class="col-lg-4 col-12 text-center">
+                                        <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" class="purecounter"></span>
+                                        <p>Speakers</p>
+                                    </div>
+
+                                </div>
+
                             </div>
                         </div>
+                        <a href="#" class="read-more">Read More <i class="bi bi-long-arrow-right"></i></a>
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-right">
+                        
+                        <css-doodle>
+                            :doodle {
+                            @grid: 12 / 100vmin 90vmin;
+                            perspective: 90vmin;
+                            perspective-origin: 0% -250%;
+                            transform: scale(.6);
+                            }
+
+                            :container {
+                            transform-style: preserve-3d;
+                            animation: camera 5s ease-in-out infinite;
+                            animation-direction: alternate-reverse;
+                            }
+
+                            --ds: @r(1.5s, 6s, .1);
+                            --size: @r(1, 9);
+
+                            /* Thanks to mootari for the tip */
+                            --z: calc(@i() * .0001px + var(--size) * .1px);
+
+                            animation:
+                            move var(--ds) linear infinite,
+                            opacity var(--ds) linear infinite;
+
+                            animation-delay:
+                            calc((@row() - @size-row()) * var(--ds) / @size-row() - @r(@size()) * .1s);
+
+                            :after {
+                            content: '';
+                            @size: calc(var(--size) * 10%);
+                            background: @p(#00b8a9, #f8f3d4, #f6416c, #ffde7d);
+                            }
+
+                            position: absolute;
+                            left: calc(@col() * 100% / @size-row());
+                            @size: calc(100% / @size-row());
+
+                            @keyframes move {
+                            0% {
+                            transform:
+                            translate3d(0, 0, calc(var(--z) - 15vmin))
+                            rotateX(180deg) scaleY(.01);
+                            }
+                            10% {
+                            transform:
+                            translate3d(0, calc(10% * @size-row()), var(--z))
+                            rotateX(0) scaleY(.8);
+                            }
+                            90% {
+                            transform:
+                            translate3d(0, calc(90% * @size-row()), var(--z))
+                            scale(1);
+                            }
+                            100% {
+                            transform:
+                            translate3d(0, calc(100% * @size-row()), calc(var(--z) + 5vmin))
+                            scale(.5);
+                            }
+                            }
+
+                            @keyframes opacity {
+                            0%, 100% { opacity: 0; }
+                            10%, 90% { opacity: .9; }
+                            }
+
+                            @keyframes camera {
+                            from {
+                            transform: rotateX(-45deg) rotate(140deg) translateY(-10%);
+                            }
+                            to {
+                            transform: rotateX(-45deg) rotate(220deg) translateY(-10%);
+                            }
+                            }
+                        </css-doodle>
+
                     </div>
                 </div>
-                <div class="accordion-item accordion-Border">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button fs-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Computer Society Launch
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                        <div class="accordion-body row">
-                            <div class="col-md-6">
-                                <h5 class="mb-3">Date: <span class="fw-normal">July 18, 2022</span> </h5>
-                                <h5 class="mb-3">Time: <span class="fw-normal">10:00 AM IST</span> </h5>
-                                <h5 class="mb-3">Speaker: <span class="fw-normal">Dr. John Doe</span> </h5>
-                                <h5 class="mb-3">Domain: <span class="fw-normal">Computer Science</span> </h5>
-                            </div>
-                            <div class="col-md-6">
-                                <h5>Description:</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum maxime laboriosam eius esse id dignissimos saepe ab, vitae veritatis. Tempora explicabo nisi quidem quaerat voluptate, harum eius vitae suscipit rerum!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item accordion-Border">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button fs-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            E-Chakravyuh
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                        <div class="accordion-body row">
-                            <div class="col-md-6">
-                                <h5 class="mb-3">Date: <span class="fw-normal">July 18, 2022</span> </h5>
-                                <h5 class="mb-3">Time: <span class="fw-normal">10:00 AM IST</span> </h5>
-                                <h5 class="mb-3">Speaker: <span class="fw-normal">Dr. John Doe</span> </h5>
-                                <h5 class="mb-3">Domain: <span class="fw-normal">Computer Science</span> </h5>
-                            </div>
-                            <div class="col-md-6">
-                                <h5>Description:</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum maxime laboriosam eius esse id dignissimos saepe ab, vitae veritatis. Tempora explicabo nisi quidem quaerat voluptate, harum eius vitae suscipit rerum!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
-        </div>
+        </section>
+        <!-- End About Section -->
 
-        <div class="Heading">
-            <a class="fs-4" href="#">View all</a>
-        </div>
+        <!-- ======= Counts Section ======= -->
 
-    </div>
+        <!-- End Counts Section -->
 
-    <div class="fullPage">
-        <div class="Heading">
-            <h1>Our partners</h1>
-        </div>
+        <!-- ======= Services Section ======= -->
+        <section id="services" class="services section-bg">
+            <div class="container" data-aos="fade-up">
 
-    </div>
+                <div class="section-title">
+                    <h2>Events</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi
+                        quidem hic quas.</p>
+                </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-</body>
+                <div class="row gy-4">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="icon-box iconbox-blue">
+                            <div class="icon">
 
-</html>
+                                <i class="bx bxl-dribbble"></i>
+                            </div>
+                            <h4><a href="">Lorem Ipsum</a></h4>
+                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="icon-box iconbox-orange ">
+                            <div class="icon">
+
+                                <i class="bx bx-file"></i>
+                            </div>
+                            <h4><a href="">Sed Perspiciatis</a></h4>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="icon-box iconbox-pink">
+                            <div class="icon">
+
+                                <i class="bx bx-tachometer"></i>
+                            </div>
+                            <h4><a href="">Magni Dolores</a></h4>
+                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="icon-box iconbox-yellow">
+                            <div class="icon">
+
+                                <i class="bx bx-layer"></i>
+                            </div>
+                            <h4><a href="">Nemo Enim</a></h4>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="icon-box iconbox-red">
+                            <div class="icon">
+
+                                <i class="bx bx-slideshow"></i>
+                            </div>
+                            <h4><a href="">Dele Cardo</a></h4>
+                            <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="icon-box iconbox-teal">
+                            <div class="icon">
+
+                                <i class="bx bx-arch"></i>
+                            </div>
+                            <h4><a href="">Divera Don</a></h4>
+                            <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End Services Section -->
+
+        <!-- ======= Features Section ======= -->
+        <section id="features" class="features">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Features</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi
+                        quidem hic quas.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column align-items-lg-center">
+                        <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+                            <i class="bx bx-receipt"></i>
+                            <h4>Est labore ad</h4>
+                            <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                        </div>
+                        <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="200">
+                            <i class="bx bx-cube-alt"></i>
+                            <h4>Harum esse qui</h4>
+                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                        </div>
+                        <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
+                            <i class="bx bx-images"></i>
+                            <h4>Aut occaecati</h4>
+                            <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                        </div>
+                        <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="400">
+                            <i class="bx bx-shield"></i>
+                            <h4>Beatae veritatis</h4>
+                            <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+                        </div>
+                    </div>
+                    <div class="image col-lg-6 order-1 order-lg-2 " data-aos="zoom-in" data-aos-delay="100">
+                        <img src="assets/img/features.svg" alt="" class="img-fluid">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End Features Section -->
+
+
+
+        <!-- ======= Footer ======= -->
+        <footer id="footer">
+
+
+            <div class="container">
+
+                <div class="copyright-wrap d-md-flex py-4">
+                    <div class="me-md-auto text-center text-md-start">
+                        <div class="copyright">
+                            &copy; Copyright <strong><span>Tech-A-Month</span></strong>. All Rights Reserved
+                        </div>
+                        <div class="credits">
+
+            Designed by <a href="https://www.linkedin.com/in/idivyanshbansal/" target="_blank">Divyansh Bansal</a>
+                        </div>
+                    </div>
+                    <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+        <div id="preloader"></div>
+
+        <!--   JS Files -->
+
+        <script src="assets/vendor/purecounter/purecounter.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.4.9/css-doodle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+        <!-- Main JS File -->
+        <script src="assets/js/main.js"></script>
+
+</body></html>
