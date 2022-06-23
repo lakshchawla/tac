@@ -10,8 +10,8 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="assets/img/tag.jpeg" rel="icon">
+    <link href="assets/img/tag.jpeg" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -48,7 +48,7 @@
                     <li><a class="nav-link scrollto" href="#services">Services</a></li>
                     <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
                     <li><a class="nav-link scrollto" href="#team">Team</a></li>
-                    <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+                    <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="#">Drop Down 1</a></li>
                             <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
@@ -64,7 +64,7 @@
                             <li><a href="#">Drop Down 3</a></li>
                             <li><a href="#">Drop Down 4</a></li>
                         </ul>
-                    </li>
+                    </li> -->
                     <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
                     <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
                 </ul>
@@ -102,9 +102,9 @@
         </div>
 
     </section>
-    
-  
-    
+
+
+
     <!-- End Hero -->
 
     <main id="main">
@@ -149,80 +149,14 @@
                         <a href="#" class="read-more">Read More <i class="bi bi-long-arrow-right"></i></a>
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-right">
-                        
+
                         <css-doodle>
-                            :doodle {
-                            @grid: 12 / 100vmin 90vmin;
-                            perspective: 90vmin;
-                            perspective-origin: 0% -250%;
-                            transform: scale(.6);
-                            }
-
-                            :container {
-                            transform-style: preserve-3d;
-                            animation: camera 5s ease-in-out infinite;
-                            animation-direction: alternate-reverse;
-                            }
-
-                            --ds: @r(1.5s, 6s, .1);
-                            --size: @r(1, 9);
-
-                            /* Thanks to mootari for the tip */
-                            --z: calc(@i() * .0001px + var(--size) * .1px);
-
-                            animation:
-                            move var(--ds) linear infinite,
-                            opacity var(--ds) linear infinite;
-
-                            animation-delay:
-                            calc((@row() - @size-row()) * var(--ds) / @size-row() - @r(@size()) * .1s);
-
-                            :after {
-                            content: '';
-                            @size: calc(var(--size) * 10%);
-                            background: @p(#00b8a9, #f8f3d4, #f6416c, #ffde7d);
-                            }
-
-                            position: absolute;
-                            left: calc(@col() * 100% / @size-row());
-                            @size: calc(100% / @size-row());
-
-                            @keyframes move {
-                            0% {
-                            transform:
-                            translate3d(0, 0, calc(var(--z) - 15vmin))
-                            rotateX(180deg) scaleY(.01);
-                            }
-                            10% {
-                            transform:
-                            translate3d(0, calc(10% * @size-row()), var(--z))
-                            rotateX(0) scaleY(.8);
-                            }
-                            90% {
-                            transform:
-                            translate3d(0, calc(90% * @size-row()), var(--z))
-                            scale(1);
-                            }
-                            100% {
-                            transform:
-                            translate3d(0, calc(100% * @size-row()), calc(var(--z) + 5vmin))
-                            scale(.5);
-                            }
-                            }
-
-                            @keyframes opacity {
-                            0%, 100% { opacity: 0; }
-                            10%, 90% { opacity: .9; }
-                            }
-
-                            @keyframes camera {
-                            from {
-                            transform: rotateX(-45deg) rotate(140deg) translateY(-10%);
-                            }
-                            to {
-                            transform: rotateX(-45deg) rotate(220deg) translateY(-10%);
-                            }
-                            }
+                            :doodle { @grid: 12 / 100vmin 90vmin; perspective: 90vmin; perspective-origin: 0% -250%; transform: scale(.6); } :container { transform-style: preserve-3d; animation: camera 5s ease-in-out infinite; animation-direction: alternate-reverse; } --ds: @r(1.5s,
+                            6s, .1); --size: @r(1, 9); /* Thanks to mootari for the tip */ --z: calc(@i() * .0001px + var(--size) * .1px); animation: move var(--ds) linear infinite, opacity var(--ds) linear infinite; animation-delay: calc((@row() - @size-row())
+                            * var(--ds) / @size-row() - @r(@size()) * .1s); :after { content: ''; @size: calc(var(--size) * 10%); background: @p(#00b8a9, #f8f3d4, #f6416c, #ffde7d); } position: absolute; left: calc(@col() * 100% / @size-row()); @size:
+                            calc(100% / @size-row()); @keyframes move { 0% { transform: translate3d(0, 0, calc(var(--z) - 15vmin)) rotateX(180deg) scaleY(.01); } 10% { transform: translate3d(0, calc(10% * @size-row()), var(--z)) rotateX(0) scaleY(.8);
+                            } 90% { transform: translate3d(0, calc(90% * @size-row()), var(--z)) scale(1); } 100% { transform: translate3d(0, calc(100% * @size-row()), calc(var(--z) + 5vmin)) scale(.5); } } @keyframes opacity { 0%, 100% { opacity: 0;
+                            } 10%, 90% { opacity: .9; } } @keyframes camera { from { transform: rotateX(-45deg) rotate(140deg) translateY(-10%); } to { transform: rotateX(-45deg) rotate(220deg) translateY(-10%); } }
                         </css-doodle>
 
                     </div>
@@ -376,7 +310,7 @@
                         </div>
                         <div class="credits">
 
-            Designed by <a href="https://www.linkedin.com/in/idivyanshbansal/" target="_blank">Divyansh Bansal</a>
+                            Designed by <a href="https://www.linkedin.com/in/idivyanshbansal/" target="_blank">Divyansh Bansal</a>
                         </div>
                     </div>
                     <div class="social-links text-center text-md-right pt-3 pt-md-0">
@@ -409,4 +343,6 @@
         <!-- Main JS File -->
         <script src="assets/js/main.js"></script>
 
-</body></html>
+</body>
+
+</html>
