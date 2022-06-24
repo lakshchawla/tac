@@ -31,7 +31,11 @@ h6 {
 
 
 /*  */
-
+.text {
+   background: linear-gradient(to right, #c766ae 0%, #6209f5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ }
 
 /*--------------------------------------------------------------
 # Back to top button
