@@ -38,6 +38,42 @@ h6 {
     -webkit-text-fill-color: transparent;
 }
 
+/**/
+.bn39 {
+    background-image: linear-gradient(135deg, #a035db, #8577fb);
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: #000;
+    display: block;
+    height: 60px;
+    font-size: 1.4em;
+    font-weight: 600;
+    padding: 4px;
+    position: relative;
+    text-decoration: none;
+    width: 8em;
+    z-index: 2;
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.6);
+}
+
+.bn39:hover {
+    color: #fff;
+}
+
+.bn39 .bn39span {
+    align-items: center;
+    background: #fff;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    transition: background 0.5s ease;
+    width: 100%;
+}
+
+.bn39:hover .bn39span {
+    background: transparent;
+}
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -123,6 +159,7 @@ h6 {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -132,6 +169,7 @@ h6 {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -209,7 +247,7 @@ h6 {
     position: relative;
 }
 
-.navbar>ul>li {
+.navbar > ul > li {
     padding: 10px 0 10px 24px;
 }
 
@@ -235,7 +273,7 @@ h6 {
     margin-left: 5px;
 }
 
-.navbar>ul>li>a:before {
+.navbar > ul > li > a:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -249,7 +287,7 @@ h6 {
 }
 
 .navbar a:hover:before,
-.navbar li:hover>a:before,
+.navbar li:hover > a:before,
 .navbar .active:before {
     visibility: visible;
     width: 100%;
@@ -258,7 +296,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover > a {
     color: #fff;
 }
 
@@ -281,7 +319,7 @@ h6 {
 }
 
 .navbar .getstarted:before,
-.navbar li:hover>.getstarted:before {
+.navbar li:hover > .getstarted:before {
     visibility: hidden;
 }
 
@@ -316,11 +354,11 @@ h6 {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
+.navbar .dropdown ul li:hover > a {
     color: #a035db;
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .dropdown:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -332,7 +370,7 @@ h6 {
     visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
+.navbar .dropdown .dropdown:hover > ul {
     opacity: 1;
     top: 0;
     left: 100%;
@@ -343,7 +381,8 @@ h6 {
     .navbar .dropdown .dropdown ul {
         left: -90%;
     }
-    .navbar .dropdown .dropdown:hover>ul {
+
+    .navbar .dropdown .dropdown:hover > ul {
         left: -100%;
     }
 }
@@ -366,6 +405,7 @@ h6 {
     .mobile-nav-toggle {
         display: block;
     }
+
     .navbar ul {
         display: none;
     }
@@ -402,7 +442,7 @@ h6 {
     transition: 0.3s;
 }
 
-.navbar-mobile>ul>li {
+.navbar-mobile > ul > li {
     padding: 0;
 }
 
@@ -414,14 +454,14 @@ h6 {
 }
 
 .navbar-mobile a:hover:before,
-.navbar-mobile li:hover>a:before,
+.navbar-mobile li:hover > a:before,
 .navbar-mobile .active:before {
     visibility: hidden;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover>a {
+.navbar-mobile li:hover > a {
     color: #a035db;
 }
 
@@ -456,11 +496,11 @@ h6 {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
+.navbar-mobile .dropdown ul li:hover > a {
     color: #a035db;
 }
 
-.navbar-mobile .dropdown>.dropdown-active {
+.navbar-mobile .dropdown > .dropdown-active {
     display: block;
 }
 
@@ -528,17 +568,21 @@ h6 {
     #hero {
         text-align: center;
     }
+
     #hero .container,
     #hero .container-fluid {
         padding-top: 68px;
     }
+
     #hero .animated {
         -webkit-animation: none;
         animation: none;
     }
+
     #hero .hero-img {
         text-align: center;
     }
+
     #hero .hero-img img {
         width: 50%;
     }
@@ -548,9 +592,11 @@ h6 {
     #hero h1 {
         font-size: 42px;
     }
+
     #hero h2 {
         font-size: 18px;
     }
+
     #hero .hero-img img {
         width: 60%;
     }
@@ -573,6 +619,7 @@ h6 {
     0% {
         transform: translateY(10px);
     }
+
     100% {
         transform: translateY(-10px);
     }
@@ -582,6 +629,7 @@ h6 {
     0% {
         transform: translateY(10px);
     }
+
     100% {
         transform: translateY(-10px);
     }
@@ -715,7 +763,7 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
- 
+
 .services img {
     border-radius: 4px;
 }
@@ -930,7 +978,7 @@ section {
     font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
     margin-top: 10px;
 }
 
@@ -999,7 +1047,7 @@ section {
     font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-form .error-message br + br {
     margin-top: 25px;
 }
 
@@ -1069,6 +1117,7 @@ section {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -1078,6 +1127,7 @@ section {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
