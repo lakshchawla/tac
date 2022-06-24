@@ -31,11 +31,13 @@ h6 {
 
 
 /*  */
+
 .text {
-   background: linear-gradient(to right, #c766ae 0%, #6209f5 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
- }
+    background: linear-gradient(to right, #c766ae 0%, #6209f5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -873,47 +875,6 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 400px;
-}
-
-
-/*--------------------------------------------------------------
-# Slider
---------------------------------------------------------------*/
-
-#slider .showcase {
-    display: block;
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-#slider .slider {
-    display: block;
-    list-style: none;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#slider .item {
-    display: block;
-    float: left;
-    position: relative;
-    width: 500px;
-    height: auto;
-    line-height: 150px;
-    text-align: center;
-}
-
-#slider img {
-    vertical-align: middle;
-    max-width: 100%;
-    max-height: 100%;
-    -webkit-transition: 0 linear left;
-    -moz-transition: 0 linear left;
-    transition: 0 linear left;
-    opacity: 0.7;
 }
 
 

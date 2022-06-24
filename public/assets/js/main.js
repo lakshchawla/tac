@@ -259,38 +259,3 @@
 
 
 })()
-
-
-
-/**
- * Slider
- */
-
-$(function() {
-    var $slider = $('.slider');
-    var sizeImage = 500;
-    var items = $slider.children().length;
-    var itemswidth = (items * sizeImage); // 140px width for each client item 
-    $slider.css('width', itemswidth);
-
-    var rotating = true;
-    var sliderspeed = 0;
-    var seeitems = setInterval(rotateSlider, sliderspeed);
-
-    function rotateSlider() {
-        var $first = $('.slider .item:first');
-        $first.animate({
-            'margin-left': '-' + sizeImage + 'px'
-        }, 3000, "linear", function() {
-            $first.remove().css({
-                'margin-left': '0px'
-            });
-            $('.slider .item:last').after($first);
-        });
-    }
-});
-
-function services(a) {
-    console.log(a);
-    localStorage.setItem('service-name', a);
-}
