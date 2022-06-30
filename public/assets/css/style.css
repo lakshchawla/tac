@@ -848,7 +848,7 @@ button.accordion-button:focus {
 }
 
 button.accordion-button:not(.collapsed) {
-    color: #e04577;
+    color: #a035db;
     background-color: #000;
 }
 
@@ -861,7 +861,7 @@ button.accordion-button:not(.collapsed) {
 }
 
 .accordion-Border {
-    border: 1px solid #dee2e6;
+    border: 1px solid #a035db;
 }
 
 .accordion-item:not(:first-of-type) {
@@ -869,7 +869,7 @@ button.accordion-button:not(.collapsed) {
 }
 
 .accordion {
-    border-left: 4px dotted #e04577;
+    border-left: 4px dotted #a035db;
 }
 
 
