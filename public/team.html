@@ -44,6 +44,122 @@
     <link href="https://unpkg.com/swiper@7/swiper-bundle.min.css" rel="stylesheet" />
 
     <!--  Main CSS File -->
+    <style>
+        /* body {
+            font-family: tahoma;
+            height: 100vh;
+            background: #000;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+        }
+         */
+        
+        .our-team {
+            padding: 30px 0 40px;
+            margin-bottom: 30px;
+            border-radius: 6px;
+            background-color: #000;
+            /* box-shadow: 0px 0px 4px 4px #fff; */
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .our-team .picture {
+            display: inline-block;
+            height: 230px;
+            width: 230px;
+            margin-bottom: 50px;
+            z-index: 1;
+            position: relative;
+        }
+        
+        .our-team .picture::before {
+            content: "";
+            width: 100%;
+            height: 0;
+            border-radius: 50%;
+            background-color: #a035db;
+            position: absolute;
+            bottom: 135%;
+            right: 0;
+            left: 0;
+            opacity: 0.9;
+            transform: scale(3);
+            transition: all 0.3s linear 0s;
+        }
+        
+        .our-team:hover .picture::before {
+            height: 100%;
+        }
+        
+        .our-team .picture::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: #a035db;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        
+        .our-team .picture img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            transform: scale(1);
+            transition: all 0.9s ease 0s;
+        }
+        
+        .our-team:hover .picture img {
+            box-shadow: 0 0 0 14px #f7f5ec;
+            transform: scale(0.7);
+        }
+        
+        .our-team .title {
+            display: block;
+            font-size: 15px;
+            color: #fff;
+            text-transform: capitalize;
+        }
+        
+        .our-team .social {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            background-color: #a035db;
+            position: absolute;
+            bottom: -100px;
+            left: 0;
+            transition: all 0.5s ease 0s;
+        }
+        
+        .our-team:hover .social {
+            bottom: 0;
+        }
+        
+        .our-team .social li {
+            display: inline-block;
+        }
+        
+        .our-team .social li a {
+            display: block;
+            padding: 10px;
+            font-size: 17px;
+            color: white;
+            transition: all 0.3s ease 0s;
+            text-decoration: none;
+        }
+        
+        .our-team .social li a:hover {
+            color: #a035db;
+            background-color: #f7f5ec;
+        }
+    </style>
     <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
@@ -76,40 +192,161 @@
     </header>
     <!-- End Header -->
 
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex align-items-center">
 
 
-        <div class="container-fluid" data-aos="fade-up">
-            <div class="row justify-content-center">
-                <div class="col-xl-6 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                    <h1 class="text">Team</h1>
-                    <!--                    <h2>2022</h2>-->
-                    <!--                    <img src="assets/img/favi.png" class="img-fluid animated" alt="">-->
+    <main id="main">
+        <section>
+            <div class="section-title">
+                <h2>Team</h2>
+
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="our-team">
+                            <div class="picture">
+                                <img class="img-fluid" src="assets/img/team/rishabh.jpeg">
+                            </div>
+                            <div class="team-content">
+                                <h3 class="name">Rishabh Raj</h3>
+                                <h4 class="title">Lead</h4>
+                            </div>
+                            <ul class="social">
 
 
-                    <div><a href="#about" class="btn-get-started scrollto">Get Started</a></div>
-                </div>
-                <div class="col-xl-5 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
-                    <img src="assets/img/971 [Converted].svg" class="img-fluid animated" alt="">
+                                <li>
+                                    <a href="https://www.linkedin.com/in/rishabhraj2257" class="bx bxl-linkedin" aria-hidden="true"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="our-team">
+                            <div class="picture">
+                                <img class="img-fluid" src="assets/img/team/vaibhav.jpeg">
+                            </div>
+                            <div class="team-content">
+                                <h3 class="name">Vaibhav Singh</h3>
+                                <h4 class="title">Lead</h4>
+                            </div>
+                            <ul class="social">
+
+                                <li>
+                                    <a href="https://www.linkedin.com/in/vaibhav-singh-7032301ab" class="bx bxl-linkedin" aria-hidden="true"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="our-team">
+                            <div class="picture">
+                                <img class="img-fluid" src="assets/img/team/atul.jpeg">
+                            </div>
+                            <div class="team-content">
+                                <h3 class="name">Atul Jha</h3>
+                                <h4 class="title">Lead</h4>
+                            </div>
+                            <ul class="social">
+
+                                <li>
+                                    <a href="https://www.linkedin.com/in/chvandana" class="bx bxl-linkedin" aria-hidden="true"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="our-team">
+                            <div class="picture">
+                                <img class="img-fluid" src="assets/img/team/vandana.png">
+                            </div>
+                            <div class="team-content">
+                                <h3 class="name">Vandana Chauhan</h3>
+                                <h4 class="title">Lead</h4>
+                            </div>
+                            <ul class="social">
+
+                                <li>
+                                    <a href="https://www.linkedin.com/in/atuljha24" class="bx bxl-linkedin" aria-hidden="true"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="our-team">
+                            <div class="picture">
+                                <img class="img-fluid" src="assets/img/team/vandana.png">
+                            </div>
+                            <div class="team-content">
+                                <h3 class="name">Vandana Chauhan</h3>
+                                <h4 class="title">Executive Lead</h4>
+                            </div>
+                            <ul class="social">
+
+                                <li>
+                                    <a href="#" class="bx bxl-linkedin" aria-hidden="true"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="our-team">
+                            <div class="picture">
+                                <img class="img-fluid" src="assets/img/team/vandana.png">
+                            </div>
+                            <div class="team-content">
+                                <h3 class="name">Vandana Chauhan</h3>
+                                <h4 class="title">Executive Lead</h4>
+                            </div>
+                            <ul class="social">
+
+                                <li>
+                                    <a href="#" class="bx bxl-linkedin" aria-hidden="true"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="our-team">
+                            <div class="picture">
+                                <img class="img-fluid" src="assets/img/team/vandana.png">
+                            </div>
+                            <div class="team-content">
+                                <h3 class="name">Vandana Chauhan</h3>
+                                <h4 class="title">Executive Lead</h4>
+                            </div>
+                            <ul class="social">
+
+                                <li>
+                                    <a href="#" class="bx bxl-linkedin" aria-hidden="true"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="our-team">
+                            <div class="picture">
+                                <img class="img-fluid" src="assets/img/team/vandana.png">
+                            </div>
+                            <div class="team-content">
+                                <h3 class="name">Vandana Chauhan</h3>
+                                <h4 class="title">Executive Lead</h4>
+                            </div>
+                            <ul class="social">
+
+                                <li>
+                                    <a href="#" class="bx bxl-linkedin" aria-hidden="true"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
 
                 </div>
             </div>
-
-
-
-
-        </div>
-
-    </section>
-
-
-
-    <!-- End Hero -->
-
-    <main id="main">
-
-
+        </section>
         <!-- ======= Footer ======= -->
         <footer id="footer">
 
